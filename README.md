@@ -48,6 +48,6 @@ The server was tested by running client and server over a local network (VPN + B
 
 **Key findings:** Lightweight commands (`date`, `uptime`, `memory`) stayed fast even as load increased, while resource-heavier commands (`netstat`, `users`, `processes`) saw turnaround time grow more sharply at higher client counts. The concurrent server's overall average turnaround time was higher than the iterative server's, since a thread-per-connection model has to share system resources across many simultaneous workers — but it scales to handle many clients at once, whereas the iterative server serializes them.
 
-## Authors
+## Credits
 
 Zach Gray, Genesis Dingle, and Fazal Rahman Safa — CNT4504, Professor Scott Kelly
